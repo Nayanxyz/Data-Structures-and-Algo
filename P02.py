@@ -26,4 +26,12 @@ def find_duplicate_fast(arr):
 
 print("Duplicate found:", find_duplicate_fast([3, 1, 4, 2, 2]))
 
-
+# The Set is incredibly fast because it uses a mathematical trick called Hashing.
+# Here is how it actually works under the hood.Imagine you work in a post office with 100 mailboxes.
+# The List Method ($O(N)$): Someone asks, "Do we have a package for John?" You start at mailbox 1 and open every single
+# box until you find John's package.
+#
+# The Set Method ($O(1)$): Someone asks, "Do we have a package for John?" You use a mathematical formula (a Hash Function)
+# that turns the word "John" into a specific number. Let's say the formula spits out the number 42.
+# You walk directly to mailbox 42. You open it.
+# If it's there, you found him. If it's empty, you instantly know he's not in the system.
