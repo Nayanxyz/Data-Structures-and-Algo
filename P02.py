@@ -14,4 +14,16 @@
 #
 # If it is not, .add() that number to the notebook so you remember it for later.
 
+def find_duplicate_fast(arr):
+    notebook = set()
+    for x in arr:
+
+         if x in notebook:
+             return x
+
+         else :
+            notebook.add(x)
+
+print("Duplicate found:", find_duplicate_fast([3, 1, 4, 2, 2]))
+
 
