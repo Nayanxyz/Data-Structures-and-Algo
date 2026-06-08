@@ -29,3 +29,15 @@
 #
 # 3. do it for the rest until , 100th card , same if else logic
 
+# 1. SET Max_Seen = value of Card 1
+# 2. FOR EACH Card from 2 to 100:
+# 3.     IF current_card > Max_Seen:
+# 4.         SET Max_Seen = current_card
+# 5. END FOR
+# 6. OUTPUT Max_Seen
+
+# The Environment: I place a stack of 100 index cards face down on the table.Rule Change:
+# This time, the cards are sorted in exact numerical order from smallest to largest. (e.g., Card 1 might be 5, Card 2 is 8,
+# Card 3 is 12...).The Objective: I hand you a sticky note with the number 84 written on it.
+# You need to find out if the number 84 exists in that stack of 100 cards, and if so, exactly where it is.
+#
