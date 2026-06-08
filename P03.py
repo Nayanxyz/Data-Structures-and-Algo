@@ -28,5 +28,21 @@ def find_duplicate_optimized(arr):
         if slow == fast:
             break  # CRASH! Exit Phase 1.
 
+    # PHASE 2: Find the Doorway (The Duplicate)
+    # Move the slow pointer back to the start line.
+    # Leave the fast pointer exactly where it crashed.
+    slow = arr[0]
 
+    # Now, both take exactly 1 step at a time.
+    # Mathematical law dictates they will collide exactly at the cycle entrance.
+    while slow != fast:
+        slow = arr[slow]  # Takes 1 step
+        fast = arr[fast]  # Takes 1 step (Slowed down to match)
+
+    # The place they collide is the duplicate number.
+    return slow
+
+
+# Execute the engine
+print("The duplicate is:", find_duplicate_optimized([3, 1, 4, 2, 2]))
 
