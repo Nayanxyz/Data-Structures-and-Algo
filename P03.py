@@ -18,5 +18,15 @@ def find_duplicate_optimized(arr):
     slow = arr[0]
     fast = arr[0]
 
+    # We use 'while True' because we know mathematically a cycle exists.
+    # It will run until they crash into each other.
+    while True:
+        slow = arr[slow]  # Tortoise takes 1 step
+        fast = arr[arr[fast]]  # Hare takes 2 steps
+
+        # Did the fast pointer lap the slow pointer?
+        if slow == fast:
+            break  # CRASH! Exit Phase 1.
+
 
 
