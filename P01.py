@@ -23,3 +23,24 @@ def find_duplicate_brute(arr):
         # This prevents comparing a number to itself, and prevents checking backwards.
         for j in range(i + 1, n):
 
+            # The Comparison
+            # If the value at the Left Finger equals the value at the Right Finger...
+            if arr[i] == arr[j]:
+                return arr[i]  # We found the duplicate, exit the function.
+
+
+# Test it
+print("Duplicate found:", find_duplicate_brute([3, 1, 4, 2, 2]))
+
+# second question
+notebook = set()       # 1. Create an empty set
+notebook.add(5)        # 2. Add the number 5 to it
+notebook.add(3)        # 3. Add the number 3 to it
+notebook.add(3)        # 3. Add the number 3 to it
+notebook.add(4)        # 3. Add the number 3 to it
+notebook.add(1)        # 3. Add the number 3 to it
+notebook.add(2)        # 3. Add the number 3 to it
+
+# 4. Check if a number is already inside (This is instant!)
+if 3 in notebook:
+    print("3 is a duplicate!")
