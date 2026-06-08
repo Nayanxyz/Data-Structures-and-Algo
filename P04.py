@@ -15,3 +15,17 @@
 # This changes your memory requirement from 100 slots ($O(N)$ Space) to exactly 1 slot ($O(1)$ Space).
 
 
+# Constraints:
+#
+# You are only allowed to keep one number in your memory at any given time. We will call this your Max_Seen.
+#
+# Do not use the word "highest" or "compare" loosely. Tell the robot exactly what to do with the card it just flipped over,
+# relative to the Max_Seen number in its memory.
+
+# 1. unflip the first card , remember the no. ,
+#
+# 2. unflip second card, if the second card no. is bigger, update the card, loose the previous card ,
+# if not , continure with the previous card, it will be max_seen.
+#
+# 3. do it for the rest until , 100th card , same if else logic
+
