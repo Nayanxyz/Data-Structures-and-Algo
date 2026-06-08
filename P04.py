@@ -41,3 +41,18 @@
 # Card 3 is 12...).The Objective: I hand you a sticky note with the number 84 written on it.
 # You need to find out if the number 84 exists in that stack of 100 cards, and if so, exactly where it is.
 #
+# The Amateur Approach ($O(N)$ Time):You could use your previous algorithm. Start at card 1, check it.
+# Go to card 2, check it. If the number is at the very bottom, it will take you 100 flips to find it.
+# The Engineering Constraint:
+# Because you know the deck is mathematically sorted, checking them one by one is a massive waste of computation.
+# You are only allowed to flip a maximum of 7 cards.If you flip 8 cards, the system crashes.
+# Your Task:
+# Write the step-by-step algorithm to guarantee you can find the number 84 (or prove it doesn't exist) by flipping 7 cards or fewer.
+
+# Binary Search.
+#
+# You intuitively understood that if data is sorted, you don't need to look at every item.
+# You can destroy half of the remaining problem with a single calculation.
+# This scaling curve is called $O(\log N)$ Time Complexity (Logarithmic Time).
+# If I gave you 4 Billion sorted cards, you wouldn't need 4 Billion flips.
+# You would only need 32 flips ($2^{32} \approx 4.2$ Billion). That is the power of high-level algorithmic engineering.
