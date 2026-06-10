@@ -27,3 +27,18 @@ node_c = Node(30)
 node_a.next = node_b
 node_b.next = node_c
 
+# 1. Put the spotlight on the first node
+current = node_a
+
+# 2. WRITE A WHILE LOOP HERE
+# The loop should run as long as 'current' is not None.
+# Inside the loop:
+#   a) Print the value of the current node.
+#   b) Move the 'current' spotlight to the next node (current = current.next)
+
+
+
+while current != None:
+    print(current.value)
+    current = current.next
+
