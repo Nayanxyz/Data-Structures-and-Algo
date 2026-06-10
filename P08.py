@@ -33,5 +33,16 @@ class BrowserHistory:
     def __init__(self):
         self.history = []
 
+    def visit_page(self, url):
+        self.history.append(url)
+        print(f"Visited: {url}")
+
+
+    def click_back(self):
+        last_page = self.history.pop()
+        print(f"Going back to: {last_page}")
+        return last_page
+
+
 
 
