@@ -44,5 +44,13 @@ class BrowserHistory:
         return last_page
 
 
+# TEST SCRIPT
+browser = BrowserHistory()
 
+browser.visit_page("google.com")
+browser.visit_page("tutorialspoint.com")
+browser.visit_page("github.com")
+
+browser.click_back()  # Should print: "Going back to: github.com"
+browser.click_back()  # Should print: "Going back to: tutorialspoint.com"
 
