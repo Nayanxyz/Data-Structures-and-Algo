@@ -20,3 +20,11 @@ class Node:
 # Prove they are linked by writing a single print statement that starts at the first node,
 # follows the pointers, and prints the number 30.
 
+node_a = Node(10)
+node_b = Node(20)
+node_c = Node(30)
+
+node_a.next = node_b
+node_b.next = node_c
+
+print(node_a.next.next.value)
