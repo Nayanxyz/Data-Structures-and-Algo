@@ -12,3 +12,19 @@ node_x = Node(15)
     # The new stone, currently pointing to nothing
 
 
+# Your Task:
+# Write exactly TWO lines of Python code to safely insert node_x between node_a and node_b without causing a memory leak.
+#
+# Remember the simulation.
+#
+# Build the new bridge forward from node_x first.
+#
+# Break the old bridge from node_a and point it to node_x.
+
+# --- 2. THE INSERTION ---
+# We do not use 'node_b' here because in a real system, we only know about the node we are standing on (node_a).
+
+# Step 1: Secure the rest of the list
+node_x.next = node_a.next
+
+
