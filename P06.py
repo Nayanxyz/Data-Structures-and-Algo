@@ -42,3 +42,23 @@ while current != None:
     print(current.value)
     current = current.next
 
+# Your Objective:
+# I want you to rewrite that exact while loop, but modify it to act as a Search Engine.
+#
+# Start current at node_a.
+#
+# Write the while loop.
+#
+# Instead of blindly printing every number, add an if statement inside the loop: Check if the current.value is equal to 20.
+#
+# If it is equal to 20, print "Target found!" and immediately break the loop (stop jumping).
+#
+# If it is not 20, jump to the next stone just like before.
+
+while current != None:
+    print(current.value)
+    if current.value == 20:
+        print("Target found")
+        break
+    else:
+        current = current.next
