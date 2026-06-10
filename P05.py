@@ -11,3 +11,12 @@ class Node:
         self.next = None   # The pointer to the next node (Defaults to nothing)
 
 
+# Using the Node class above, write the Python code to do exactly this:
+#
+# Create three separate nodes with the values 10, 20, and 30.
+#
+# Manually link them together so that 10 points to 20, and 20 points to 30.
+#
+# Prove they are linked by writing a single print statement that starts at the first node,
+# follows the pointers, and prints the number 30.
+
