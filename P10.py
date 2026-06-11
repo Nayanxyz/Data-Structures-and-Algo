@@ -22,3 +22,9 @@ class TreeNode:
 root = TreeNode(50)
 left_branch = TreeNode(25)
 right_branch = TreeNode(75)
+
+root.left = left_branch
+root.right = right_branch
+
+print(root.left.value)
+print(root.right.value)
