@@ -38,3 +38,12 @@ class PrinterQueue:
         return remove
 
 
+# TEST SCRIPT
+printer = PrinterQueue()
+
+printer.add_job("Financial_Report.pdf")
+printer.add_job("Employee_Handbook.docx")
+printer.add_job("Resignation_Letter.txt")
+
+printer.print_job() # Should print: "Printing: Financial_Report.pdf"
+printer.print_job() # Should print: "Printing: Employee_Handbook.docx"
