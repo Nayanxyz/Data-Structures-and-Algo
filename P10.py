@@ -12,3 +12,13 @@
 #
 # The Traversal: Prove the connections by writing two print statements:
 # One that uses the root variable to print the left value (25), and one that uses the root variable to print the right value (75).
+
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+root = TreeNode(50)
+left_branch = TreeNode(25)
+right_branch = TreeNode(75)
