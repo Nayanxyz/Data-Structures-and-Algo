@@ -26,3 +26,19 @@ root.left.left = TreeNode(10)
 root.left.right = TreeNode(30)
 
 
+def traverse_in_order(node):
+    # BASE CASE: If the box doesn't exist (you fell off the tree), stop and go back.
+    if node is None:
+        return
+
+    # STEP 1: GO LEFT.
+    # (Call this exact function again, passing in the left map)
+    # Write Step 1 here:
+
+    traverse_in_order(node.left)
+
+    # STEP 2: PROCESS.
+    # (Print the value of the current node)
+    # Write Step 2 here:
+    print(node.value)
+
