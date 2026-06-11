@@ -25,3 +25,13 @@ root.right = TreeNode(75)
 root.left.left = TreeNode(10)
 root.left.right = TreeNode(30)
 
+def search_bst(node, target):
+    # Rule 1: Dead end
+    if node is None:
+        return False
+
+    # Rule 2: Found it
+    if node.value == target:
+        return True
+
+print(search_bst(root, 99)) # Should print False
