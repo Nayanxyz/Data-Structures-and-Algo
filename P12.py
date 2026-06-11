@@ -34,4 +34,17 @@ def search_bst(node, target):
     if node.value == target:
         return True
 
+    # Rule 3: Target is smaller. Go Left.
+    elif target < node.value:
+        return search_bst(node.left, target)
+    # WRITE THE RECURSIVE CALL HERE
+
+    # Rule 4: Target is larger. Go Right.
+    else:
+        return search_bst(node.right, target)
+
+# WRITE THE RECURSIVE CALL HERE
+
+# Test your engine
+print(search_bst(root, 30)) # Should print True
 print(search_bst(root, 99)) # Should print False
