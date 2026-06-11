@@ -42,3 +42,10 @@ def traverse_in_order(node):
     # Write Step 2 here:
     print(node.value)
 
+    # STEP 3: GO RIGHT.
+    # (Call this exact function again, passing in the right map)
+    # Write Step 3 here:
+    traverse_in_order(node.right)
+
+# Execute the engine
+traverse_in_order(root)
