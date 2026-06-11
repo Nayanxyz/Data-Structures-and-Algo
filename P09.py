@@ -24,3 +24,17 @@
 # Write the PrinterQueue class. Create the __init__, add_job, and print_job methods.
 # Apply the FIFO constraint. Paste the code.
 
+
+class PrinterQueue:
+    def __init__(self):
+        self.save = []
+
+    def add_job(self, add):
+        self.save.append(add)
+
+    def print_job(self):
+        remove = self.save.pop(0)
+        print(f"printing: {remove}")
+        return remove
+
+
