@@ -14,3 +14,8 @@ def invert_tree(node):
     # 1. Base Case (Dead end)
     if node is None:
         return
+
+    # 2. The Swap Engine (Physical mutation)
+    temp = node.left
+    node.left = node.right
+    node.right = temp
