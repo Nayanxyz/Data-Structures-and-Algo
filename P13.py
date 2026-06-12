@@ -9,3 +9,8 @@
 #
 # Once a node has swapped its own left and right arms, it must command its clones to go down the new left path
 # and the new right path and repeat the exact same process.
+
+def invert_tree(node):
+    # 1. Base Case (Dead end)
+    if node is None:
+        return
