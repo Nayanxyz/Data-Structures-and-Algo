@@ -19,3 +19,6 @@ def invert_tree(node):
     temp = node.left
     node.left = node.right
     node.right = temp
+
+    # 3. Clone the function and send it down the NEW left map
+    invert_tree(node.left)
