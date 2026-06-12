@@ -22,3 +22,6 @@ def invert_tree(node):
 
     # 3. Clone the function and send it down the NEW left map
     invert_tree(node.left)
+
+    # 4. Clone the function and send it down the NEW right map
+    invert_tree(node.right)
